@@ -1,11 +1,17 @@
 <template>
   <main>
-    <div v-for="article in articles" :key="article.slug" class="cards">
-      <nuxt-link :to="article.slug">
-        <div class="card convex">
-          {{ article.title }}
-        </div>
-      </nuxt-link>
+    <div class="products">
+      <h2>Products</h2>
+      <div class="cards">
+        <nuxt-link v-for="article in articles" :key="article.slug" :to="article.slug">
+          <div class="card convex">
+            <div class="image">
+              <img src="https://potewo.github.io/images/LEDCUBE.JPEG">
+            </div>
+            <h2>{{ article.title }}</h2>
+          </div>
+        </nuxt-link>
+      </div>
     </div>
   </main>
 </template>

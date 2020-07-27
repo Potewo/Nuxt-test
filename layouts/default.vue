@@ -33,8 +33,8 @@ header {
 }
 
 .card {
-  width: 300px;
-  height: 300px;
+  margin: 20px;
+  padding: 50px;
 }
 
 .card .cards {
