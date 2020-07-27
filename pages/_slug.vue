@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="convex">
     <nuxt-content :document="article" />
   </article>
 </template>
